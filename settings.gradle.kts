@@ -1,4 +1,4 @@
-rootProject.name = "MyApplication"
+rootProject.name = "GeminiTalker"
 
 include(":androidApp")
 include(":shared")
