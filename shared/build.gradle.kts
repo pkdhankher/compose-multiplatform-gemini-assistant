@@ -23,6 +23,7 @@ kotlin {
 
     sourceSets {
         val ktorVersion = "2.3.6"
+        val voyagerVersion = "1.0.0"
         val coroutineVersion = "1.7.3"
 
         val commonMain by getting {
@@ -52,6 +53,13 @@ kotlin {
                 implementation("io.github.team-preat:peekaboo-ui:0.3.0")
                 implementation("io.github.team-preat:peekaboo-image-picker:0.3.0")
 
+                //datastore
+//                implementation("androidx.datastore:datastore-preferences-core:1.0.0")
+
+                //koin- dependency injection
+                implementation("io.insert-koin:koin-core:3.5.3")
+                implementation("cafe.adriel.voyager:voyager-koin:$voyagerVersion")
+                implementation("cafe.adriel.voyager:voyager-navigator:$voyagerVersion")
 
                 implementation("media.kamel:kamel-image:0.9.0")
                 implementation("com.mikepenz:multiplatform-markdown-renderer:0.10.0")
